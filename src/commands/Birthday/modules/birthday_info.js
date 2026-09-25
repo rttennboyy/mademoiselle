@@ -18,7 +18,7 @@ export default {
                 .setColor(0xFFFFFF)
                 .setTitle('⟡﹒ 𝗻𝗼 𝗯𝗶𝗿𝘁𝗵𝗱𝗮𝘆 𝗳𝗼𝘂𝗻𝗱')
                 .setDescription(targetUser.id === interaction.user.id 
-                    ? "you haven't set your birthday yet. Use `/birthday set` to add it ‎𖹭"
+                    ? "you haven't set your birthday yet. use `/birthday set` to add it ‎𖹭"
                     : `${targetUser.username} hasn't set their birthday yet ‎𖹭`);
             return await InteractionHelper.safeEditReply(interaction, {
                 embeds: [embed]
