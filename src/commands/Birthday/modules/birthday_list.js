@@ -14,9 +14,9 @@ export default {
 
         if (sortedBirthdays.length === 0) {
             const embed = new EmbedBuilder()
-                .setColor(0xFF0000)
-                .setTitle('No Birthdays')
-                .setDescription('No birthdays have been set in this server yet.');
+                .setColor(0xFFFFFF)
+                .setTitle('⟡﹒ 𝗻𝗼 𝗯𝗶𝗿𝘁𝗵𝗱𝗮𝘆𝘀')
+                .setDescription('no birthdays have been set in this server yet ‎𖹭');
             return await InteractionHelper.safeEditReply(interaction, {
                 embeds: [embed]
             });
@@ -46,9 +46,9 @@ export default {
 
         if (displayIndex === 0) {
             const embed = new EmbedBuilder()
-                .setColor(0xFF0000)
-                .setTitle('No Birthdays')
-                .setDescription('No birthdays have been set by current server members.');
+                .setColor(0xFFFFFF)
+                .setTitle('⟡﹒ 𝗻𝗼 𝗯𝗶𝗿𝘁𝗵𝗱𝗮𝘆𝘀')
+                .setDescription('no birthdays have been set by current server members ‎𖹭');
             return await InteractionHelper.safeEditReply(interaction, {
                 embeds: [embed]
             });
@@ -57,9 +57,9 @@ export default {
         birthdayList = `**${displayIndex} birthday${displayIndex !== 1 ? 's' : ''} in ${interaction.guild.name}**\n\n` + birthdayList;
 
         const embed = new EmbedBuilder()
-            .setColor(0x00FF00)
-            .setTitle('Server Birthdays')
-            .setDescription(`${birthdayList}\n\nTotal: ${displayIndex} birthday${displayIndex !== 1 ? 's' : ''}`);
+            .setColor(0xFFFFFF)
+            .setTitle('⟡﹒ 𝘀𝗲𝗿𝘃𝗲𝗿 𝗯𝗶𝗿𝘁𝗵𝗱𝗮𝘆𝘀')
+            .setDescription(`${birthdayList}\n\ntotal: ${displayIndex} birthday${displayIndex !== 1 ? 's' : ''}`);
 
         await InteractionHelper.safeEditReply(interaction, {
             embeds: [embed]
